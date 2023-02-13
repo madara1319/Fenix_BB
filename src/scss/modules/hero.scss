@@ -1,0 +1,25 @@
+.hero {
+  padding: 74px 16px 88px;
+  background: $cream;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: auto;
+  }
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    padding-bottom: 176px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $red;
+    font-weight: bold;
+  }
+  &__box--image {
+    width: 768px;
+    box-sizing: content-box;
+    border-radius: 15%;
+    border: 16px solid $brown;
+  }
+}
