@@ -1,25 +1,44 @@
 .hero {
-  padding: 74px 16px 88px;
-  background: $cream;
+
+  background: $pictrucks;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+
   @media (min-width: $tablet) {
     max-width: 768px;
     margin: auto;
   }
   @media (min-width: $desktop) {
     max-width: 100%;
-    padding-bottom: 176px;
+    height:768px;
+
   }
   &__box {
+    padding: 5px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    color: $red;
+    color: #FFFF;
     font-weight: bold;
+    font-style: italic;
+    background-position: 70%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+  
+    
+
+    text-shadow: 2px 2px 1px black;
+    &--header
+    {
+      vertical-align: baseline;
+    }
+    &--logo
+    {
+      margin-bottom:18px;
+    }
   }
-  &__box--image {
-    width: 768px;
-    box-sizing: content-box;
-    border-radius: 15%;
-    border: 16px solid $brown;
-  }
+
 }
