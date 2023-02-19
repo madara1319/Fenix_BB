@@ -1,14 +1,23 @@
 .head__bar
 {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    position: fixed;
+    vertical-align: baseline;
+    height: 85px;
+    background: #fff;
+    width: 100%;
+   
+  
 
 }
 .navigation
 {
+    color: #fe7f88;
     padding: 16px;
     display: none;
+    min-height: 60px;
     @media(min-width: 768px)
     {
         padding: 16px;
@@ -26,13 +35,7 @@
 {
     display:block;
     margin: 0 0 16px;
-    &:focus{
-        border:3px solid yellow;
-    }
-    &:visited{
-        color:#fe7f88;
 
-    }
     &:hover{
         color:#a663cc;
     }
@@ -41,4 +44,21 @@
 .navigation--open
 {
     display:block;
+    width: 150px;
+    box-sizing: content-box;
+    padding: 5px;
+
+    background: #fff;
+
+
+}
+.button
+{
+        background: $burger;
+
+    @media(min-width:768px)
+    {
+        display:none;
+
+    }
 }
