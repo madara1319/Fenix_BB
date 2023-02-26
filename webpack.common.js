@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     burger: "./src/js/burger-menu.js",
+    sticky: "./src/js/sticky-menu.js",
   },
   output: {
     filename: "[name].[hash:8].js",
