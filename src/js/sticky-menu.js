@@ -2,7 +2,7 @@ window.onscroll = function () {
   stickyHeader();
 };
 
-var header = document.querySelector(".navigation--js");
+var header = document.querySelector(".head__bar--js");
 
 var sticky = header.offsetTop;
 console.log(header);
@@ -10,8 +10,8 @@ console.log(header);
 
 function stickyHeader() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("navigation__menu--sticky");
+    header.classList.add("menu--sticky");
   } else {
-    header.classList.remove("navigation__menu--sticky");
+    header.classList.remove("menu--sticky");
   }
 }
