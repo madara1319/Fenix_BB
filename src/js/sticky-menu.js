@@ -13,5 +13,6 @@ function stickyHeader() {
     header.classList.add("menu--sticky");
   } else {
     header.classList.remove("menu--sticky");
+    header.classList.remove("head__bar");
   }
 }

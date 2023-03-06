@@ -1,9 +1,8 @@
 .hero {
-
   background: $pictrucks;
   background-position: center;
   background-size: cover;
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
     max-width: 768px;
@@ -11,15 +10,14 @@
   }
   @media (min-width: $desktop) {
     max-width: 100%;
-    height:768px;
-
+    height: 768px;
   }
   &__box {
     padding: 5px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #FFFF;
+    color: #ffff;
     font-weight: bold;
     font-style: italic;
     background-position: 70%;
@@ -27,18 +25,20 @@
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: center;
-  
-    
 
     text-shadow: 2px 2px 1px black;
-    &--header
-    {
+    &--header {
       vertical-align: baseline;
+      font-size: 20px;
+      @media (min-width: $tablet) {
+        font-size: 32px;
+      }
+      @media (min-width: $desktop) {
+        font-size: 32px;
+      }
     }
-    &--logo
-    {
-      margin-bottom:18px;
+    &--logo {
+      margin-bottom: 18px;
     }
   }
-
 }
