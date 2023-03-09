@@ -11,8 +11,9 @@ console.log(header);
 function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("menu--sticky");
+    header.classList.remove("head__bar");
   } else {
     header.classList.remove("menu--sticky");
-    header.classList.remove("head__bar");
+    header.classList.add("head__bar");
   }
 }

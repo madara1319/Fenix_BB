@@ -1,66 +1,50 @@
 .head__bar {
   margin: 50px 0 0 0;
-  //position: fixed;
-  display: flex;
-  justify-content: center;
-  vertical-align: baseline;
-  // height: 85px;
-  // background: #fff;
-  // width: 100%;
- //transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
-  //z-index: 100;
-  // font-size: 1em;
-  background-attachment: scroll;
-  align-items: center;
+  position: fixed;
 
+  //left: 50%;
+  // transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  color: #474c50;
+
+  transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
+  z-index: 100;
+  width: 100%;
 
 }
 
 .menu--sticky {
-  margin: 0 0 0 0;
-  height: 50px;
-  transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
-  align-items: center;
   position: fixed;
   display: flex;
+  margin: 0 0 0 0;
+  height: 85px;
+  transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
+  align-items: center;
   justify-content: space-between;
   background: #fff;
   width: 100%;
- // z-index: 100;
+  z-index: 100;
 }
 .navigation {
-  //  color: #fe7f88;
   padding: 16px;
   display: none;
-  //  min-height: 60px;
+
   @media (min-width: 768px) {
-    // padding: 16px;
-    //border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-decoration: none;
+    justify-self: center;
+    background: #fff;
+    width: 970px;
+    height: 85px;
 
-    //align-items: center;
-    //height: 100px;
-    //min-height: 60px;
-    //position: center;
-    width: 90%;
-    //     &__menu--sticky {
-    //       margin: 0 0 0 0;
-    //       height: 50px;
-    //       transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
-    //       align-items: center;
-    //     }
   }
 }
-// .navigation__link {
-//   display: block;
-//   margin: 0 0 16px;
 
-//   &:hover {
-//     color: #a663cc;
-//   }
-// }
 .navigation--open {
   display: flex;
   align-items: center;
@@ -68,14 +52,11 @@
   row-gap: 15px;
   width: 100%;
   height: auto;
-  // padding: 5px;
-  // margin-top: 25px;
-  //z-index: 50;
 }
 .button {
   display: block;
   background: $burger;
-  // margin: 15px 0 0 80%;
+
   background-size: 100%;
   background-repeat: no-repeat;
   margin-left: 25px;
@@ -83,7 +64,7 @@
   border: none;
   padding: 0;
   padding-bottom: 80px;
-  // color: blue;
+
   position: absolute;
   top: 20px;
   left: 20px;
