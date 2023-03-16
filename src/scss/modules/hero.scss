@@ -3,6 +3,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
 
   @media (min-width: $tablet) {
     max-width: 768px;
@@ -22,19 +25,19 @@
     font-style: italic;
     background-position: 70%;
     height: 500px;
-    //margin-top: 50px;
-    //margin-bottom: 50px;
     justify-content: center;
+    font-size: 2rem;
 
     text-shadow: 2px 2px 1px black;
     &--header {
       vertical-align: baseline;
-      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 700;
       @media (min-width: $tablet) {
-        font-size: 32px;
+        font-size: 2rem;
       }
       @media (min-width: $desktop) {
-        font-size: 32px;
+        font-size: 2rem;
       }
     }
     &--logo {

@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&family=Nunito:wght@300;600;700&family=Quicksand:wght@300;600&family=Raleway:ital,wght@0,100;0,400;1,700&family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/hero.scss";
@@ -8,6 +8,7 @@
 @import "modules/contact.scss";
 @import "modules/header.scss";
 @import "modules/reset.scss";
+
 
 html {
   box-sizing: border-box;
@@ -19,5 +20,5 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 🇲🇸 ;
+  font-family: Lato,sans-serif;
 }

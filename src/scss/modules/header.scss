@@ -1,11 +1,11 @@
 .head__bar {
-  margin: 50px 0 0 0;
   position: fixed;
 
   //left: 50%;
   // transform: translateX(-50%);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-self: center;
   align-items: center;
   top: 0;
   color: #474c50;
@@ -13,17 +13,23 @@
   transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
   z-index: 100;
   width: 100%;
+  text-align: center;
+  margin: 50px 0 0 0;
 
+  @media (min-width: 768px) {
+    margin: 50px 0 0 0;
+  }
 }
 
 .menu--sticky {
   position: fixed;
+
   display: flex;
   margin: 0 0 0 0;
   height: 85px;
   transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: #fff;
   width: 100%;
   z-index: 100;
@@ -31,6 +37,8 @@
 .navigation {
   padding: 16px;
   display: none;
+  font-weight: 700;
+  font-size: 1.5rem;
 
   @media (min-width: 768px) {
     display: flex;
@@ -41,17 +49,20 @@
     background: #fff;
     width: 970px;
     height: 85px;
-
   }
 }
 
 .navigation--open {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 15px;
-  width: 100%;
-  height: auto;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 50px;
+  }
 }
 .button {
   display: block;
