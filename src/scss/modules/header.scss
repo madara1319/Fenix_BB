@@ -9,7 +9,8 @@
   align-items: center;
   top: 0;
   color: #474c50;
-
+  height: 85px;
+  background: #fff;
   transition: 0.5s cubic-bezier(0.42, 0, 1, 1) !important;
   z-index: 100;
   width: 100%;
@@ -17,7 +18,11 @@
   margin: 50px 0 0 0;
 
   @media (min-width: 768px) {
-    margin: 50px 0 0 0;
+    margin: 50px auto;
+    width: 970px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -39,6 +44,7 @@
   display: none;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-top: 36px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -61,7 +67,6 @@
     width: 100%;
     height: auto;
     background: #fff;
-    padding-top: 50px;
   }
 }
 .button {
