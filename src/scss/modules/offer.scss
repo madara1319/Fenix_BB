@@ -42,11 +42,11 @@
       background-image: $logistics;
     }
   }
-  &--slide
-  {
+  &--slide {
     display: flex;
     justify-content: center;
     vertical-align: baseline;
     gap: 15px;
   }
+
 }

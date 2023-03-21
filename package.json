@@ -44,6 +44,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "normalize.css": "^8.0.1",
     "swiper": "^9.0.5"
   }
