@@ -1,52 +1,58 @@
-.offer {
-  background-color: $lightblue;
-  color: #fff;
-  text-shadow: 0.5px 0.5px 1px black;
-  padding: 64px 36px 88px;
-  &__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-  }
-  &-list {
-    list-style: none;
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
-    width: 288px;
-    &__item {
-      padding: 0 0 0 24px;
-      margin: 0 0 16px;
-    }
-  }
-  &__slide {
-    background-size: 100%;
-    width: 50px;
-    padding-bottom: 50px;
-    display: block;
-    background-repeat: no-repeat;
-    &--truck {
-      background-image: $truck;
-    }
-    &--warehouse {
-      background-image: $warehouse;
-    }
-    &--client {
-      background-image: $users;
-    }
-    &--business {
-      background-image: $businessbuilding;
-    }
-    &--logistics {
-      background-image: $logistics;
-    }
-  }
-  &--slide {
-    display: flex;
-    justify-content: center;
-    vertical-align: baseline;
-    gap: 15px;
-  }
+// .offer {
+//   background-color: $lightblue;
+//   color: #fff;
+//   text-shadow: 0.5px 0.5px 1px black;
+//   padding: 64px 36px 88px;
+//   &__box {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-content: center;
+//   }
+//   &-list {
+//     list-style: none;
+//     padding: 0;
+//     font-size: 16px;
+//     line-height: 24px;
+//     width: 288px;
+//     &__item {
+//       padding: 0 0 0 24px;
+//       margin: 0 0 16px;
+//     }
+//   }
+//   &__slide {
+//     background-size: 100%;
+//     width: 50px;
+//     padding-bottom: 50px;
+//     display: block;
+//     background-repeat: no-repeat;
+//     &--truck {
+//       background-image: $truck;
+//     }
+//     &--warehouse {
+//       background-image: $warehouse;
+//     }
+//     &--client {
+//       background-image: $users;
+//     }
+//     &--business {
+//       background-image: $businessbuilding;
+//     }
+//     &--logistics {
+//       background-image: $logistics;
+//     }
+//   }
+//   &--slide {
+//     display: flex;
+//     justify-content: center;
+//     vertical-align: baseline;
+//     gap: 15px;
+//   }
 
+// }
+.glide__slide {
+  border: 1px solid black;
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
 }

@@ -1,33 +1,31 @@
-// const slider = new Slider(".offer--slider",{
-//     slidesPerView: 4,
-//     spaceBetween: 50,
-//     loop: true,
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slideActiveClass: "active",
-//     navigation: {
-//       nextEl: ".next",
-//       prevEl: ".prev"
-//     },
-//     pagination: {
-//       el: ".pagination",
-//       clickable: true
-//     },
-//     autoplay: {
-//       enabled: true,
-//       delay: 5000
-//     },
-//     // Media
-//     // breakpoints: {
-//     //   // when window width is >= 320px
-//     //   320: {
-//     //     slidesPerView: 2,
-//     //     spaceBetween: 20
-//     //   },
-//     //   // when window width is >= 480px
-//     //   480: {
-//     //     slidesPerView: 4,
-//     //     spaceBetween: 30
-//     //   },
-//     // }
-//   });
+import Glide from '@glidejs/glide';
+
+
+var glideHero = new Glide('.glide', {
+    type: 'carousel',
+    animationDuration: 2000,
+    autoplay: 4500,
+    focusAt: '1',
+    startAt: 3,
+    perView: 1, 
+  });
+
+
+  glideHero.mount();
+
+  var offerClass=document.querySelector(".offer--glide");
+
+  function GlideRemover(){
+if (window.innerWidth < 768) {
+    offerClass.classList.remove(".glide");
+
+  }
+  else
+  {
+    offerClass.classList.add(".glide");
+  };
+};
+
+window.onscroll = function () {
+    GlideRemover();
+  };
