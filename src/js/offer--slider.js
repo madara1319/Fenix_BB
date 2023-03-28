@@ -1,3 +1,4 @@
+import glide from '@glidejs/glide';
 import Glide from '@glidejs/glide';
 
 
@@ -13,19 +14,30 @@ var glideHero = new Glide('.glide', {
 
   glideHero.mount();
 
-  var offerClass=document.querySelector(".offer--glide");
 
-  function GlideRemover(){
-if (window.innerWidth < 768) {
-    offerClass.classList.remove(".glide");
 
+var windowSize =window.innerWidth;
+
+if(windowSize>768)
+{
+  glideHero.disable();
+}
+else
+{
+  glideHero.enable();
+};
+
+function resizeFunction()
+{
+  var windowSize =window.innerWidth;
+  if(windowSize>768)
+  {
+    glideHero.disable();
   }
   else
   {
-    offerClass.classList.add(".glide");
-  };
-};
+    glideHero.enable();
 
-window.onscroll = function () {
-    GlideRemover();
-  };
+  }
+};
+window.addEventListener(`resize`,resizeFunction);
