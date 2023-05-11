@@ -7,6 +7,8 @@ module.exports = {
     index: "./src/js/index.js",
     burger: "./src/js/burger-menu.js",
     sticky: "./src/js/sticky-menu.js",
+    offerSlider: "./src/js/offer-slider",
+    googleMaps: "./src/js/googleMaps",
   },
   output: {
     filename: "[name].[hash:8].js",
