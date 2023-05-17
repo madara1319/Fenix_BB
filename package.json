@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
+    "@googlemaps/js-api-loader": "^1.15.1",
     "googleapis": "^118.0.0",
     "normalize.css": "^8.0.1",
     "swiper": "^9.0.5"
