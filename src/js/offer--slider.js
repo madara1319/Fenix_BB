@@ -1,6 +1,6 @@
 import Glide from "@glidejs/glide";
 
-
+var glideSlide=document.querySelector(".offer--slide");
 var glideHero = null;
 
 function resizeFunction() {
@@ -18,12 +18,14 @@ function resizeFunction() {
       });
       glideHero.mount();
       console.log('Glide mounted');
+      glideSlide.classList.add("glide__slide");
     }
   } else {
     if (glideHero) {
       glideHero.destroy();
       glideHero = null;
       console.log('Glide destroyed');
+      glideSlide.classList.remove("glide__slide");
     }
   }
 }
