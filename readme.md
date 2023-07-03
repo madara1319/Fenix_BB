@@ -1,12 +1,15 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# Simple Business Card Page 
 
-Simple toolkit for your static websites development.
+Basic Page done for Transport Company done as a training
 
-## How to use it?
+## Used Tools
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+- WTF Webpack starter kit
+
+- HTML + SCSS
+
+- Vanilla JS
 
 ## Available scripts
 
