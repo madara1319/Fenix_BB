@@ -18,8 +18,13 @@
         font-weight: 600;
     }
     &__map{
-        width:600px; 
-        height:450px;
+        @media(min-width: 768px)
+        {
+            width:600px; 
+            height:450px;
+        }
+        width: 85%;
+        
          border:0;
          padding-top: 15px;
     }
