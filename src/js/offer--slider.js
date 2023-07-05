@@ -11,7 +11,7 @@ function resizeFunction() {
       glideHero = new Glide(".glide", {
         type: "carousel",
         animationDuration: 2000,
-        autoplay: 4500,
+        autoplay: null,
         focusAt: "1",
         startAt: 3,
         perView: 1,

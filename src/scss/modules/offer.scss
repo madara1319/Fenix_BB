@@ -4,6 +4,35 @@
   text-shadow: 0.5px 0.5px 1px black;
   padding: 64px 36px 88px;
 
+  &__button
+  {
+    @media(min-width: 768px)
+    {
+      display: none;
+    }
+    padding: 0;
+    border-left: 15px solid transparent; 
+    border-right:15px solid black;
+    border-top:15px solid transparent;
+    border-bottom: 15px solid transparent;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    top:30px;
+    &--left
+    {
+      position: absolute;
+      right:25px;
+      transform: scaleX(-1);
+    }
+    &--right
+    {
+      position: absolute;
+      left:25px;
+    }
+  }
+  
+
   &__slide {
     background-size: 100%;
     width: 100px;

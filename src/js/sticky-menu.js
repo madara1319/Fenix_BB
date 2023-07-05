@@ -1,12 +1,12 @@
 window.onscroll = function () {
   stickyHeader();
-  console.log(window.pageYOffset);
+ // console.log(window.pageYOffset);
 };
 
 var header = document.querySelector(".head__bar--js");
 
 var sticky = header.offsetTop;
-console.log(header);
+//console.log(header);
 
 
 
