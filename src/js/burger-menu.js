@@ -7,3 +7,15 @@ navigationButton.addEventListener("click", () => {
   }
 });
 
+// $('.navigation__link').click(function(){
+//   console.log('klikels');
+
+// });
+  //function(){navigation.classList.remove("navigation--open");
+const naviLink=document.querySelector(".navigation");
+naviLink.addEventListener('click',function()
+{
+  navigation.classList.toggle("navigation--open");
+  //console.log("Klikles");
+})
+  
