@@ -99,3 +99,25 @@
     display: none;
   }
 }
+
+.button--closed
+{
+  display: block;
+  background: $closex;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+  width: 75px;
+  border: none;
+  padding: 0;
+  padding-bottom: 80px;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

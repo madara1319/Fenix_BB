@@ -4,6 +4,7 @@ $lightblue:#259add;
 //$pictrucks:url(../assets/img/first_section.jpg);
 $pictrucks:url(../assets/img/truck2.jpg);
 $burger:url(../assets/img/burger-menu-svgrepo-com.svg);
+$closex:url(../assets/img/close-svgrepo-com.svg);
 $truck:url(../assets/img/truck-long-svgrepo-com.svg);
 $logistics:url(../assets/img/cascade-of-elements-interface-symbol-for-visualization-options-svgrepo-com.svg);
 $businessbuilding:url(../assets/img/business-building-svgrepo-com.svg);
@@ -14,3 +15,6 @@ $send:url(../assets/img/send-svgrepo-com.svg);
 $close:url(../assets/img/close-svgrepo-com.svg);
 $mail:url(../assets/img/mail-svgrepo-com.svg);
 
+:root {
+  --background: url(../assets/img/close-svgrepo-com.svg);
+}
